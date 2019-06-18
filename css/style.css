@@ -1,0 +1,708 @@
+html, body{	
+	background-color: #000;
+	font-family: Arial, Tahoma;
+	font-size: 1.01em;	
+	color: #fff;
+	
+
+}
+
+
+
+/* *{
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+} */
+
+#banner{
+	background-color: #000;
+	position: relative;
+	overflow: auto;
+
+	width: 100vw;
+	max-width: 1920px; /*1920px*/
+	height: auto;/*765 - примерно прикидываем сколько это 100% или 100 vhpx*/
+	margin: 0 auto;
+}
+header{
+	width: 100vw;
+	height: 12vh;
+}
+.wrap{
+	
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 80.00%;
+	height: auto;
+	
+	
+}
+.sort{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+#logo{
+	margin: 2vh 0;
+	width: 12vw;
+	height: 8vh;
+}
+#logo img{
+	width: auto;
+	height: 100%;
+}
+#nav, #nav-trigger{
+	display: none;	
+    visibility: hidden;
+}
+
+#content{
+
+	width: 100vw;
+	height: 88vh;
+}
+#content .sort{
+	align-items: center; justify-content: space-around;
+}
+
+#present_banner{
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+
+	position: relative;
+	overflow: hidden;
+	width: 50%;
+	height: 50vh;
+}
+#present_motivation{
+	
+	position: relative;
+	overflow: hidden;	
+	width: 37vw;
+	height: auto;
+}
+#present_motivation h2{
+   text-align: right;
+   font-size: 3.7em;
+}
+#present_motivation h1{
+    text-align: right;
+    font-size: 5em;
+    color: rgb(242, 184, 8);
+}
+#slogan{
+	display: none;
+}
+
+
+
+#present_banner img{
+	
+	width: 100%;
+	height: 100%;
+
+}
+.news{
+	position: relative;
+	overflow: hidden;
+	margin-top: 3vh;
+	width: 100vw;	
+	height: auto;
+
+}
+ .sortRow{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+} 
+.news_block{
+	position: relative;
+	overflow: hidden;		
+	width: 23%;
+	height: auto;
+
+}
+.news_block header{
+	
+	background-color: #F2B808;
+	border-radius: .36vmax;
+	margin-bottom: 3vh;
+	width: 100%;
+	height: 4vh;
+}
+.news_block .sort{
+    align-items: center;
+    justify-content: space-around;
+}
+.news_pr{
+	width: auto;
+	height: auto;
+}
+.news_pr h2{
+	font-size:  1.2em;
+}
+.dumbbell{
+	position: relative;
+	overflow: hidden;    
+	width: auto;
+	height: auto;
+}
+
+
+.dumbbell:before{
+	
+	font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+	content: "\f44b";
+	font-size: .76em;
+	font-weight: 600;	
+	color: #fff;
+
+}
+.news_presentation{
+	width: 100%;
+	height: auto;
+
+}
+.news_presentation img{
+	width: 100%;
+	height: 100%;
+}
+.news_block_info{
+	margin: 3vh 0;
+	width: 100%;
+	height: auto;
+}
+footer{ 
+	background-color: #F2B808;
+	margin: 3vh auto;
+	position: relative;
+	overflow: hidden;
+	border-radius: .36vmax;	
+	width: 80vw;
+	height: 6vh;
+}
+
+footer h2{
+	width: auto;
+	height: auto;
+	font-size: 1.2em;
+}
+
+
+@media screen and (max-device-width: 1200px){
+	body{
+		font-size: 1.17em;
+	}
+	.wrap{
+		width: 97.5%;
+	}
+	.sort{
+		width: 97.5%;
+	}
+	.sortRow{
+		width: 100%;
+	}
+	#logo{
+	margin: 0;
+	width: 16vw;
+	height: 12vh;
+    }
+    #content .sort{
+
+    }
+    #present_banner{
+
+    	position: relative;
+    	overflow: hidden;
+    	margin-bottom: 2.5vh;
+    	width: 100%;
+    	height: 87vh;
+    	background-position: 0 0;
+    	background-size: cover;
+
+    }
+    #present_motivation{
+
+    	position: absolute;
+    	top: 10vh;
+    	right: 2vh;
+    }
+	
+   #present_motivation{
+    margin-right: 50vw;
+	width: 45vw;	
+   }
+   #present_motivation h2{
+
+   
+   font-size: 3em;
+   text-align: right;
+   }
+   #present_motivation h1{
+
+   font-size: 4.2em;
+   text-align: right;
+   color: #F2B808;
+
+   }
+   
+   .news_block{
+		width: 32%;
+	}
+   .news_block header{	
+	height: 6vh;
+
+    }
+   .news_pr h2{
+	font-size:  1.3em;
+
+   }
+	
+}
+@media screen  and (max-device-width: 1024px){
+
+	#present_motivation{	
+    position: absolute;
+    top: 10vh;
+    left: 3vh;
+	width: 40vw;	
+   }
+   #present_motivation h2{   
+   font-size: 2.7em;
+   }
+   #present_motivation h1{
+   font-size: 3em; 
+   }
+   .news_block header{	
+	height: 8vh;
+
+    }
+    footer{
+    	height: 8vh;
+    }
+   
+}
+@media screen  and (max-device-width: 860px) {
+
+	.menu ul li a{
+		width: 20vw;
+	}
+
+
+
+}
+@media screen  and (max-device-width: 768px) {
+
+	.menu{
+    	display: none;
+    	visibility: hidden;
+    }
+    #nav, #nav-trigger{
+    	display: block;
+    	visibility: visible;
+    }
+
+	#present_banner{
+
+    	background-image: url(../images/banner_mobile.jpg);
+    	background-position: left;    	
+    	height: 110vh; 
+
+    }
+   #present_motivation{	
+    position: absolute;
+    top: 10vh;
+    left: 3vh;
+	width: 55vw;	
+   }
+
+   #present_motivation h2{
+   text-align: left;
+   font-size: 4em;
+
+   }
+   #present_motivation h1{
+   font-size: 6em; 
+
+   }
+   .news_block{
+		width: 46%;
+	}
+	.news_block header{	
+	height: 11vh;
+
+    }
+    footer{
+    	height: 11vh;
+    }
+    footer h2{
+    	font-size: 1.3em;
+    }
+	.news_pr h2{
+	font-size:  2em;
+
+   }
+   .news_block p{
+   	font-size: 1.2em;
+   }
+
+     
+
+}
+ @media only screen and (max-device-width : 640px) {
+
+    
+
+    #present_motivation{	
+    position: absolute;
+    top: 0vh;
+    left: 3vh;
+	width: 60vw;	
+   }
+
+
+    #present_motivation h2{
+   margin-top: 3vh;
+   text-align: left;
+   font-size: 3em;
+
+   }
+   #present_motivation h1{   
+   text-align: left;
+   width: 100%;
+   font-size: 5em; 
+
+   }
+
+ 	.news_block{
+		width: 96%;
+	}
+	.news_block header{	
+	height: 15vh;
+
+    }
+   .news_pr h2{    
+	font-size:  2.7em;
+
+   }
+   .news_block p{
+   	font-size: 1.1em;
+   }
+   .dumbbell:before{	
+	font-size: 2em;
+   }
+  
+
+
+}
+ @media only screen and (max-device-width : 570px){
+
+ 	#present_motivation{    
+    top: 7vh;    	
+   }
+   
+	
+
+ }
+ @media only screen and (max-device-width : 320px) {
+
+ 	.news_block header{	
+	height: 14vh;
+    }
+
+ 	.news_pr h2{
+	font-size:  2.1em;
+   }
+
+ 	.news_block p{
+   	font-size: 1.5em;
+
+   }
+   #present_motivation{    
+    top: 3vh;   	
+   }
+
+    #present_motivation h2{   
+    font-size: 3em;
+   }
+   #present_motivation h1{
+   font-size: 5em; 
+   }
+
+}
+
+
+/*------------------desktop-------------------------*/
+
+@media screen and (max-width: 1200px){
+	body{
+		font-size: 1.17em;
+	}
+	.wrap{
+		width: 97.5%;
+	}
+	.sort{
+		width: 97.5%;
+	}
+	.sortRow{
+		width: 100%;
+	}
+	#logo{
+	margin: 0;
+	width: 16vw;
+	height: 12vh;
+    }
+    #content .sort{
+
+    }
+    #present_banner{
+
+    	position: relative;
+    	overflow: hidden;
+    	margin-bottom: 2.5vh;
+    	width: 100%;
+    	height: 87vh;
+    	background-position: 0 0;
+    	background-size: cover;
+
+    }
+    #present_motivation{
+    	position: absolute;
+    	top: 10vh;
+    	right: 2vh;
+    }
+	
+   #present_motivation{
+    margin-right: 50vw;
+	width: 45vw;	
+   }
+   #present_motivation h2{   
+   font-size: 3em;
+   text-align: right;
+   }
+   #present_motivation h1{
+   font-size: 4.2em;
+   text-align: right;
+
+   }
+   
+   .news_block{
+		width: 32%;
+	}
+   .news_block header{	
+	height: 6vh;
+    }
+   .news_pr h2{
+	font-size:  1.3em;
+   }
+	
+}
+@media screen  and (max-width: 1024px){
+
+	#present_motivation{	
+    position: absolute;
+    top: 10vh;
+    left: 3vh;
+	width: 40vw;	
+   }
+   #present_motivation h2{   
+   font-size: 2.7em;
+
+   }
+   #present_motivation h1{
+   font-size: 3em; 
+
+   }
+}
+@media screen  and (max-width: 860px) {
+
+	.menu ul li a{
+		width: 20vw;
+	}
+
+}
+@media screen  and (max-width: 768px) {
+
+	.menu{
+    	display: none;
+    	visibility: hidden;
+    }
+    #nav, #nav-trigger{
+    	display: block;
+    	visibility: visible;
+    }
+
+	#present_banner{
+    	background-image: url(../images/banner_mobile.jpg);
+    	background-position: left;    	
+    	height: 110vh; 
+
+    }
+   #present_motivation{	
+    position: absolute;
+    top: 10vh;
+    left: 3vh;
+	width: 55vw;	
+   }
+
+   #present_motivation h2{
+   text-align: left;
+   font-size: 4em;
+
+   }
+   #present_motivation h1{
+   font-size: 6em; 
+
+   }
+   .news_block{
+		width: 46%;
+	}
+	.news_block header{	
+	height: 8vh;
+
+    }
+	.news_pr h2{
+	font-size:  1.7em;
+
+   }
+   .news_block p{
+   	font-size: 1.2em;
+   }
+   footer{
+   	height: 8vh;
+   }
+   footer h2{
+   	font-size: 1.3em;
+   }
+   .dumbbell:before{	
+	font-size: 2em;
+	
+
+}
+   
+  
+
+}
+ @media screen and (max-width : 640px) {
+
+    #present_motivation{	
+    position: absolute;
+    top: 0vh;
+    left: 3vh;
+	width: 60vw;	
+   }
+
+
+    #present_motivation h2{
+   margin-top: 3vh;
+   text-align: left;
+   font-size: 3em;
+
+   }
+   #present_motivation h1{
+   
+   text-align: left;
+   width: 100%;
+   font-size: 5em; 
+
+   }
+
+ 	.news_block{
+		width: 96%;
+	}
+	.news_block header{	
+	height: 9vh;
+
+    }
+   .news_pr h2{    
+	font-size:  2.1em;
+
+   }
+   .news_block p{
+   	font-size: 1.1em;
+   }
+   .dumbbell:before{	
+	font-size: 2em;
+   }
+   footer{
+   	height: 9vh;
+   }
+
+
+}
+ @media screen and (max-width : 570px){
+
+ 	#present_motivation{	
+    position: absolute;
+    top: 7vh;
+    left: 3vh;
+	width: 60vw;	
+   }
+   .nav-trigger{
+   	right: 4vw;
+   }
+   footer h2{
+   	font-size: 1.3em;
+   }
+
+ }
+ @media screen and (max-width : 375px) {
+ 	footer h2{
+ 		font-size: 1.1em;
+ 	}
+
+ }
+ @media screen and (max-width : 320px) {
+
+ 	.news_block header{	
+	height: 14vh;
+
+    }
+
+ 	.news_pr h2{
+	font-size:  2.1em;
+
+   }
+
+ 	.news_block p{
+   	font-size: 1.5em;
+
+   }
+   #present_motivation{	
+    position: absolute;
+    top: 3vh;
+    left: 3vh;
+	width: 60vw;	
+   }
+
+    #present_motivation h2{   
+   font-size: 3em;
+
+   }
+   #present_motivation h1{
+   font-size: 5em; 
+
+   }
+   footer{
+   	height: 14vh;
+   }
+   footer h2{
+   	font-size: 1.1em;
+   }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+.menu ul {
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.menu ul li {
+	position: relative;
+	list-style: none;
+}
+.menu ul li a {
+	position: relative;
+	width: 10vw;
+	height: 4vh;
+	display: block;
+	color: #fff;
+	line-height: 4vh;
+	text-align: center;
+	text-decoration: none;
+  text-transform: uppercase;
+	transition: .5s;
+	box-sizing: border-box;
+}
+.menu ul li a span {
+	position: absolute;
+	width: 25%;
+	height: 100%;
+	background-color: #F2B808;
+	z-index: -1;
+	transform-origin: top;
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.menu ul li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.menu ul li a:hover span {
+	transform-origin: bottom;
+	transform: scaleY(1);
+}
+.menu ul li a span:nth-child(1) {
+	left: 0;
+	transition-delay: 0s;
+}
+.menu ul li a span:nth-child(2) {
+	left: 25%;
+	transition-delay: 0.15s;
+}
+.menu ul li a span:nth-child(3) {
+	left: 50%;
+	transition-delay: 0.3s;
+}
+.menu ul li a span:nth-child(4) {
+	left: 75%;
+	transition-delay: 0.45s;
+}
+@media screen  and (max-device-width: 1200px) {
+    .menu ul {
+	
+	left: 65%;	
+    }
+	
+	.menu ul li a{
+		width: 16vw;
+	}
+}
+@media screen  and (max-width: 1024px) {
+    .menu ul {
+	
+	left: 65%;	
+    }
+	
+	.menu ul li a{
+		width: 16vw;
+	}
+}
+@media screen  and (max-device-width: 860px) {
+    .menu ul {
+	
+	left: 60%;	
+    }
+	.menu ul li a{
+		width: 17vw;
+	}
+}
+
+@media screen  and (max-width: 860px) {
+    .menu ul {
+	
+	left: 60%;	
+    }
+	.menu ul li a{
+		width: 17vw;
+	}
+}
